@@ -1,6 +1,4 @@
-<!---
-![FLExo logo](./assets/flexo_logo_v1.svg)
--->
+![Sismis logo](./assets/sismis_logo_purple.svg)
 
 # Sismis
 Machine learning-based secretion system annotation tool
