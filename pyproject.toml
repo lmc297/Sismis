@@ -1,0 +1,53 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    'setuptools >=39.2', 
+    'rich >=12.4.0', 
+    'pyhmmer ~=0.11.0', 
+    'wheel >=0.30'
+]
+
+[project]
+name = "sismis"
+dynamic = ["version"]
+description = "Secretion system discovery tool."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Laura M. Carroll", email = "lmc297@cornell.edu" },
+  { name = "Martin Larralde", email = "martin.larralde@embl.de" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "Typing :: Typed",
+]
+dependencies = [
+    "gecco ~=0.10.0a3",
+    "importlib-metadata >=4.0      ; python_version < '3.10'",
+    "importlib-resources >=5.7     ; python_version < '3.11'",
+]
+
+[project.urls]
+"Repository" = "https://github.com/lmc297/Sismis"
+"Bug Tracker" = "https://github.com/lmc297/Sismis/issues"
+
+[project.entry-points.console_scripts]
+sismis = "sismis.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = true
+exclude = ["docs*", "tests*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "sismis.__version__"}
+

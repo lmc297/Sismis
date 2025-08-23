@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include CITATION.cff
+include sismis/py.typed
+
+recursive-include sismis/crf *.pkl *.pkl.md5
+recursive-include sismis/hmmer *.ini
+recursive-include sismis/types *.tsv *.npz
