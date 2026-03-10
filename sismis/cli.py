@@ -38,6 +38,7 @@ def main(
             "--select": 0.15,
             "--threshold": 0.8,
             "--cds": 3,
+            "--trim": False,
         }
     )
 
