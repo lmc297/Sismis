@@ -36,7 +36,7 @@ def main(
             "--window-size": 20,
             "--feature-type": "protein",
             "--select": 0.15,
-            "--threshold": 0.8,
+            "--threshold": 0.4,
             "--cds": 3,
             "--trim": False,
         }
