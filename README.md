@@ -1,5 +1,8 @@
 <img align="right" width="550" height="160" src="https://raw.githubusercontent.com/lmc297/Sismis/refs/heads/main/assets/sismis_logo_purple.svg">
 
+<br>
+<br>
+
 # Sismis
 Machine learning-based secretion system annotation tool
 
